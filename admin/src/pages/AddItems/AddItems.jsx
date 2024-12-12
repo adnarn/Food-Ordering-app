@@ -19,7 +19,7 @@ const AddItems = ({theme}) => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/api/category');
+        const response = await axios.get('https://food-ordering-app-qi5n.onrender.com/api/category');
         setCategories(response.data); // Set fetched categories in state
       } catch (error) {
         console.error('Error fetching categories:', error);
@@ -55,7 +55,7 @@ const AddItems = ({theme}) => {
     }
 
     try {
-      const response = await axios.post('http://localhost:8000/api/food/add', formData, {
+      const response = await axios.post('https://food-ordering-app-qi5n.onrender.com/api/food/add', formData, {
         headers: {
           'Content-Type': 'multipart/form-data', // Ensure multipart form data is sent
         },
