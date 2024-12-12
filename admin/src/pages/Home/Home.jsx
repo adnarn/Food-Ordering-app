@@ -59,7 +59,7 @@ const Home = ({ theme }) => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch('http://localhost:8000/api/food/list');  
+        const response = await fetch('https://food-ordering-app-qi5n.onrender.com/api/food/list');  
         const result = await response.json();
         
         if (result.success) {
@@ -79,7 +79,7 @@ const Home = ({ theme }) => {
   const fetchAllOrders = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:8000/api/orders/admin-order"
+        "https://food-ordering-app-qi5n.onrender.com/api/orders/admin-order"
       );
       if (response.data.success) {
         // Sort orders by date (newest first)
