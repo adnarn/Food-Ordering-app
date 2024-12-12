@@ -1,0 +1,158 @@
+/* Login container (background) */
+.login-container {
+    /* height: 100vh; */
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+
+/* Login box (the form wrapper) */
+.login-box {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Background gradient effect */
+.login-gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top right, #f43f5e, #fbbf24);
+    /* filter: blur(10px); */
+    z-index: 1;
+    animation: animateGradient 3s infinite;
+}
+
+/* Keyframes for gradient animation */
+@keyframes animateGradient {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Actual form content */
+.login-content {
+    z-index: 2;
+    background-color: black;
+    padding: 2.5rem;
+    border-radius: 15px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #fbbf24;
+}
+
+/* Title styling */
+.login-title {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Form styling */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Form group (label + input) */
+.form-group {
+    width: 100%;
+}
+
+/* Label styling */
+.form-label {
+    display: block;
+    font-size: 1.125rem;
+    color: #e5e7eb;
+    margin-bottom: 0.5rem;
+}
+
+/* Input styling */
+.form-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    background-color: #111;
+    color: #d1d5db;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: #e5e7eb;
+}
+
+#forgot{
+    /* color: #e5e7eb; */
+    text-decoration: none;
+    margin-top: -10px;
+    cursor:pointer;
+}
+
+/* Button styling */
+.login-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #fbbf24;
+    color: black;
+    font-size: 1.125rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #f59e0b;
+}
+
+#or{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/* Google login button styling */
+.google-login-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: rgb(255, 123, 0);
+    border: none;
+    color: black;
+    font-size: 1.125rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.google-login-button:hover {
+    background-color: #e5e7eb;
+}
+
+.google-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+}

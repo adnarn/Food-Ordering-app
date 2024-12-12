@@ -1,0 +1,70 @@
+/* Light Theme */
+.light-app {
+    background-color: #fff;
+    color: #000;
+}
+
+.light-theme {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Dark Theme */
+.dark-app {
+    background-color: black;
+    color: #ceb241;
+}
+
+.dark-theme {
+    background-color: black;
+    color: #fff;
+}
+
+/* //others components */
+.sidebar-light {
+    background-color: #fff;
+    color: #000;
+    border-right: 2px solid #edeff2;
+    .sidebar-option{
+        border: 2px solid #edeff2;
+    };
+    .sidebar-option.active{
+        background-color: rgb(211, 210, 210);
+        color: black;
+    }
+}
+.sidebar-dark {
+    background-color: black;
+    color: #fff;
+    border-right: 1.5px solid #ceb241;
+    .sidebar-option{
+        border: 1px solid #ceb241;
+    };
+    .sidebar-option.active{
+        background-color: orange;
+        color: black;
+    }
+}
+
+.input-light{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ccc; 
+}
+.input-dark{
+    background-color: black;
+    color: #fff;
+    border: 1px solid #ceb241; 
+}
+
+.nav-light{
+    .navigation{
+        border-bottom:  2px solid #edeff2;    
+    }
+
+    }
+    .nav-dark{
+        .navigation{
+            border-bottom: 1.5px solid #ceb241;
+        };
+}

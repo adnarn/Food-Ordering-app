@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  color: white;
+}
+
+#root {
+  height: 100%;
+}
+
+.App {
+  background-color: black;
+  min-height: 100vh;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+.messageIcon{
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  float: right;
+  position: static;
+}
+.messageIcon img{
+  width: 8rem;
+}

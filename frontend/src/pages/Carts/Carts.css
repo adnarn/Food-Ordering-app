@@ -1,0 +1,117 @@
+/* Carts.css */
+
+/* General container styling */
+.cart-container {
+  background-color: #f0eaea;
+  color: black; /* Light text color for contrast */
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.cart-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.cart-items-header, .cart-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 10px 0;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+
+.cart-items-header {
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 2px solid #555;
+}
+
+.cart-item-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.cart-item-name {
+  font-size: 1rem;
+}
+
+.cart-item-price, .cart-item-total, .cart-item-quantity span {
+  text-align: center;
+}
+
+.cart-item-quantity {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+button {
+  background-color: #333; /* Dark button background */
+  color: #f5f5f5; /* Light button text color */
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555; /* Lighter shade on hover */
+}
+
+.remove-btn {
+  background-color: #555; /* Lighter shade on hover */
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.cart-summary {
+  text-align: right;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.clear-cart-btn {
+  background-color: #d9534f; /* Red color for clear button */
+  color: #f5f5f5;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.clear-cart-btn:hover {
+  background-color: #c9302c; /* Darker red on hover */
+}
+
+.empty-cart {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+
+.proceed-btn{
+  padding: 12px;
+  background: orange;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-right: 7px;
+}
+
+/* @media (max-width: 500px) {
+ 
+  .btn{
+      padding: 12px;
+      background: yellow;
+      margin-left: 4.5rem;
+      margin-top: 10px;
+    }
+} */

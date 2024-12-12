@@ -1,0 +1,107 @@
+/* Container for the add product form */
+.add-product-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    /* margin-top: 3rem; */
+    padding: 1.5rem;
+}
+
+/* Box wrapping the form */
+.add-product-box {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    z-index: 2;
+}
+
+/* Title for the form */
+.add-product-title {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Form styling */
+.add-product-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Form group wrapper */
+.form-group {
+    width: 100%;
+}
+
+/* Label styling */
+.form-label {
+    font-size: 1.125rem;
+    color: #e5e7eb;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+/* Input fields */
+.form-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    background-color: #111;
+    color: #d1d5db;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: #e5e7eb;
+}
+
+.add-image-upload{
+    width: 120px;
+    cursor: pointer;
+}
+.add-image-upload img{
+    width: 120px;
+}
+
+#category{
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    background-color: #111;
+    color: #d1d5db;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+#category:focus {
+    border-color: #e5e7eb;
+}
+
+/* Button styling */
+.add-product-button {
+    padding: 0.75rem;
+    background-color: #fbbf24;
+    color: black;
+    font-size: 1.125rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* margin-top: 1.5rem; */
+    width: 100%;
+    height: 3rem;
+}
+
+.add-product-button:hover {
+    background-color: #f59e0b;
+}

@@ -1,0 +1,32 @@
+/* Container for aligning the button to the right */
+.add-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.add-container a {
+    text-decoration: none;
+}
+
+/* Button styling */
+.add-button {
+    background-color: #facc15; /* equivalent to bg-yellow-400 */
+    border-radius: 9999px; /* equivalent to rounded-full */
+    width: 25px; /* equivalent to w-5 */
+    height: 25px; /* equivalent to h-5 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.125rem; /* equivalent to text-lg */
+    transition: background-color 0.2s ease-in-out;
+    color: white;
+    border:none;   
+    cursor: pointer;
+}
+
+/* Hover effect for button */
+.add-button:hover {
+    background-color: #f59e0b; /* equivalent to hover:bg-yellow-500 */
+    color: black;
+}
+

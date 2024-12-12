@@ -1,0 +1,62 @@
+/* General container styling */
+.about-container {
+    background-color: white;
+    color: black;
+    padding: 6rem;
+    /* max-width: 1200px; */
+    /* margin-top: 93rem; */
+    align-items: center;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 2rem; /* Optional: Add some gap between the columns */
+}
+
+/* Text and description area */
+.about-container h2 {
+    font-size: 1.5rem; /* Corresponds to text-2xl */
+    font-weight: 500;  /* Corresponds to font-medium */
+}
+
+.about-container p {
+    font-size: 1.125rem; /* Corresponds to text-lg */
+}
+
+/* Image container */
+.about-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image-container img {
+    width: 100%; /* Make the image take up the full width of its container */
+    max-width: 400px; /* Set a max width for larger screens */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the box without stretching */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr; /* Single column layout for small screens */
+        text-align: center;
+        width: 100%;
+    }
+
+    .about-image-container {
+        margin-top: 2rem;
+        align-items: center;
+        justify-content: center; /* Ensure the image is centered */
+    }
+
+    .about-container h2 {
+        font-size: 1.25rem; /* Slightly smaller heading for smaller screens */
+    }
+
+    .about-container p {
+        font-size: 1rem; /* Adjust text size for small screens */
+        width: 60%; /* Optional: Limit the width of the text */
+        margin: auto; /* Center the paragraph */
+    }
+}

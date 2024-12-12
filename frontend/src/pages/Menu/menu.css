@@ -1,0 +1,233 @@
+.menu-category-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .menu-tab {
+    background-color: #eee;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .menu-tab:first-child {
+    margin-left: 0; /* Remove left margin for the first tab */
+  }
+  
+  .menu-tab + .menu-tab {
+    margin-left: 10px; /* Add space between the "All" tab and the rest */
+  }
+  
+  .menu-tab:hover {
+    background-color: #ddd;
+  }
+  
+  /* Existing styles below remain unchanged */
+  
+
+
+/* General resets for menu component */
+.menu-container {
+    padding: 20px;
+    background-color: #f4f4f4;
+    
+  }
+  
+  .menu-category-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .menu-tab {
+    background-color: #eee;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .menu-tab:hover {
+    background-color: #ddd;
+  }
+  
+  .menu-active-tab {
+    background-color: #ffbe0b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+  }
+
+  /* .flex-class{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  .searchIcon{
+    display:flex;
+    justify-content: right;
+    margin-left: 5rem;
+    margin-top: -4rem;
+    margin-bottom: 12px;
+  }
+  .search-icon{
+    width: 3rem;
+    cursor: pointer;
+  }
+  .searchbar{
+    display: flex;
+    color: gray;
+    right: 0;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  #search{
+    /* border: 1px solid gray; */
+    border: 1px solid rgb(189, 183, 183);
+    padding: 9px;
+    width: 100%;
+    outline: gray;
+    border-radius: 10px;
+    color: gray;
+    padding-left: 2rem;
+    font-size: 15px;
+    text-transform: capitalize;
+  }
+  .searchbar p{
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: -29px;
+    margin-right: 10px;
+  }
+
+  /* Products grid */
+  .menu-products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .menu-product-card {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+  }
+  
+  .menu-product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Image container to make images responsive */
+  .menu-product-image-container {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+    position: relative;
+  }
+  
+  .menu-product-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .menu-product-title {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .menu-product-description {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #666;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limits description to 3 lines */
+    -webkit-box-orient: vertical;
+  }
+  
+  .menu-product-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff6600;
+    margin-top: 10px;
+    display: block;
+  }
+  
+  .menu-no-products {
+    font-size: 1.2rem;
+    color: #ff0000;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .menu-products-grid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .menu-products-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .menu-tab, .menu-active-tab {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  /* Cart link styling */
+.cart-link {
+  position: relative;
+  margin-right: 1rem; /* equivalent to mr-4 */
+}
+
+/* Cart icon styling */
+.cart-link img {
+  /* Add any specific styling for the cart icon image here */
+}
+
+/* Cart count bubble */
+.cart-count {
+  position: absolute;
+  top: -0.25rem; /* equivalent to -top-1 in Tailwind */
+  right: -0.25rem; /* equivalent to -right-1 in Tailwind */
+  background-color: #facc15; /* equivalent to bg-yellow-400 in Tailwind */
+  color: white;
+  border-radius: 9999px; /* equivalent to rounded-full */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.25rem; /* Equivalent to w-full but adjusted to a fixed size */
+  height: 1.25rem; /* Adjust height to make it circular */
+  font-size: 0.75rem; /* Adjust the font size if needed */
+}
