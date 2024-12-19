@@ -8,6 +8,7 @@ const ProductSchema = new Schema({
     description: { type: String, required: true },
     price: { type: String, required: true },
     category: String,
+    trashed: { type: Boolean, default: false }, 
 });
 
 // Exporting the Product model
