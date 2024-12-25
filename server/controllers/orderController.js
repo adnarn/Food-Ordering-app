@@ -48,7 +48,7 @@ const placeOrder = async (req, res) => {
     const paymentData = {
       email,
       amount: amount * 100, // Convert amount to kobo
-      callback_url: `http://localhost:5173/order`, // Update dynamically for production
+      callback_url: `https://food-ordering-app-qi5n.onrender.com/order`, // Update dynamically for production
     };
     
     // Step 4: Initialize payment with Paystack
