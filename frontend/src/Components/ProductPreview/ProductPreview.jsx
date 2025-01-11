@@ -10,7 +10,7 @@ const ProductPreview = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch("http://localhost:8000/api/food/list");
+        const response = await fetch("https://food-ordering-app-qi5n.onrender.com/api/food/list");
         const result = await response.json();
 
         if (result.success) {
