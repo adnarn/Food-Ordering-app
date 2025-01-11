@@ -15,7 +15,7 @@ const Receipt = () => {
     const fetchOrder = async () => {
       try {
         // Change to GET request and use the correct URL
-        const response = await axios.get(`http://localhost:8000/api/orders/${id}`);
+        const response = await axios.get(`https://food-ordering-app-qi5n.onrender.com/api/orders/${id}`);
 
         if (response.data.success) {
           setOrder(response.data.data); // Set the fetched order details
