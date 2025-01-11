@@ -15,7 +15,7 @@ const OrderHistory = ({ token }) => {
   const fetchOrders = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/orders/user-order",
+        "https://food-ordering-app-qi5n.onrender.com/api/orders/user-order",
         {},
         {
           headers: {
