@@ -54,7 +54,7 @@ const PaymentSuccess = () => {
       }
 
       try {
-        const response = await axios.get(`http://localhost:8000/api/orders/verify/${reference}`);
+        const response = await axios.get(`https://food-ordering-app-qi5n.onrender.com/api/orders/verify/${reference}`);
 
         if (response.data.success) {
           console.log("Payment verification successful:", response.data);
