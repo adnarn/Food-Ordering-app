@@ -29,8 +29,8 @@ const MenuComponent = () => {
     const fetchProducts = async () => {
       try {
         const url = selectedCategory
-          ? `http://localhost:8000/api/food/list?category=${selectedCategory}&search=${searchTerm}`
-          : `http://localhost:8000/api/food/list?search=${searchTerm}`;
+          ? `https://food-ordering-app-qi5n.onrender.com/api/food/list?category=${selectedCategory}&search=${searchTerm}`
+          : `https://food-ordering-app-qi5n.onrender.com/api/food/list?search=${searchTerm}`;
         const response = await axios.get(url);
         if (response.data.success) {
           setProducts(response.data.data);
