@@ -77,7 +77,7 @@ const PlaceOrder = () => {
       };
 
       const response = await axios.post(
-        "http://localhost:8000/api/orders/place",
+        "https://food-ordering-app-qi5n.onrender.com//api/orders/place",
         orderData,
         {
           headers: { Authorization: `Bearer ${token}` },
